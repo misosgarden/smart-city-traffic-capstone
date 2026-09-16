@@ -1,0 +1,7 @@
+Part 2 Visualisation Interpretations
+
+1. Hourly patterns: weekday traffic is bimodal, with a morning peak around 07:00 (~6,030) and a taller evening peak at 16:00 (~6,190), reflecting the standard commute. Weekend traffic has no sharp peak, instead rising to a broad plateau of around 4,350 from midday to late afternoon. This means traffic-management interventions timed for weekday rush hours (signal retiming, incident response staffing) would be poorly matched to weekend demand, which needs a different, flatter response window.
+
+2. Traffic distribution: the distribution is bimodal, with a large cluster of low-traffic overnight readings and a second, broader concentration between 4,576 and 4,784 vehicles (daytime commute hours). The mean (3,260) sits close to the median (3,379), with only a slight negative skew (-0.089), so the shape is better described as bimodal than simply left-skewed. This mirrors the weekday/weekend pattern in the hourly chart: traffic volume on this corridor is fundamentally a function of time of day rather than a smoothly varying quantity.
+
+3. Weather comparison: Clouds has the highest average traffic and Squall has the lowest, a difference of about 1,556 vehicles. The Squall result is based on only 4 records, so it should be interpreted cautiously and weather should not be treated as a sole predictor.

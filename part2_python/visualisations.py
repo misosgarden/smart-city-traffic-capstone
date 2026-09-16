@@ -114,13 +114,25 @@ def plot_hourly_patterns(data: pd.DataFrame, output_dir: Path) -> str:
     fig.tight_layout()
     save_figure(fig, output_dir / "hourly_traffic_weekday_weekend.png")
 
-    weekday_peak = int(hourly[0].idxmax())
-    weekend_peak = int(hourly[1].idxmax())
+    weekday_morning_hour = int(hourly.loc[5:11, 0].idxmax())
+    weekday_morning_value = float(hourly.loc[5:11, 0].max())
+    weekday_evening_hour = int(hourly.loc[12:20, 0].idxmax())
+    weekday_evening_value = float(hourly.loc[12:20, 0].max())
+    weekend_plateau_value = float(hourly.loc[12:16, 1].mean())
+
+    morning_display = round(weekday_morning_value, -1)
+    evening_display = round(weekday_evening_value, -1)
+    weekend_display = round(weekend_plateau_value / 50) * 50
+
     return (
-        f"Hourly patterns: weekday traffic peaks at {weekday_peak:02d}:00, while "
-        f"weekend traffic peaks at {weekend_peak:02d}:00. The weekday curve shows "
-        "clearer commuting peaks, so time and day type should be considered together "
-        "when planning traffic interventions."
+        f"Hourly patterns: weekday traffic is bimodal, with a morning peak around "
+        f"{weekday_morning_hour:02d}:00 (~{morning_display:,.0f}) and a taller evening "
+        f"peak at {weekday_evening_hour:02d}:00 (~{evening_display:,.0f}), reflecting "
+        "the standard commute. Weekend traffic has no sharp peak, instead rising to a "
+        f"broad plateau of around {weekend_display:,.0f} from midday to late afternoon. "
+        "This means traffic-management interventions timed for weekday rush hours "
+        "(signal retiming, incident response staffing) would be poorly matched to "
+        "weekend demand, which needs a different, flatter response window."
     )
 
 
@@ -144,10 +156,25 @@ def plot_traffic_distribution(data: pd.DataFrame, output_dir: Path) -> str:
     fig.tight_layout()
     save_figure(fig, output_dir / "traffic_volume_distribution.png")
 
+    skew_value = float(traffic.skew())
+    counts, bin_edges = np.histogram(traffic, bins=35)
+    upper_bins = bin_edges[:-1] > median_value
+    upper_counts = counts.copy()
+    upper_counts[~upper_bins] = 0
+    peak_idx = int(upper_counts.argmax())
+    second_peak_low = float(bin_edges[peak_idx])
+    second_peak_high = float(bin_edges[peak_idx + 1])
+
     return (
-        f"Traffic distribution: the mean is {mean_value:,.0f} vehicles and the median "
-        f"is {median_value:,.0f}. The wide distribution reflects substantial variation "
-        "between quiet overnight periods and busy commuting periods."
+        f"Traffic distribution: the distribution is bimodal, with a large cluster of "
+        f"low-traffic overnight readings and a second, broader concentration between "
+        f"{second_peak_low:,.0f} and {second_peak_high:,.0f} vehicles (daytime commute "
+        f"hours). The mean ({mean_value:,.0f}) sits close to the median "
+        f"({median_value:,.0f}), with only a slight negative skew ({skew_value:.3f}), "
+        "so the shape is better described as bimodal than simply left-skewed. This "
+        "mirrors the weekday/weekend pattern in the hourly chart: traffic volume on "
+        "this corridor is fundamentally a function of time of day rather than a "
+        "smoothly varying quantity."
     )
 
 

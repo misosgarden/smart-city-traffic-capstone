@@ -66,3 +66,11 @@
 2026-09-18 02:05:45,297 | INFO | __main__ | Saved visualisation to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/figures/average_traffic_by_weather.png
 2026-09-18 02:05:45,297 | INFO | __main__ | Saved visualisation interpretations to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/visualisation_interpretations.txt
 2026-09-18 02:05:45,298 | INFO | __main__ | Visualisation workflow completed successfully
+2026-09-18 02:14:53,155 | INFO | __main__ | Traffic analysis application started
+2026-09-18 02:14:53,262 | INFO | __main__ | Loaded traffic application dataset with 48187 rows and 34 columns
+2026-09-18 02:14:55,704 | INFO | __main__ | Menu command selected: 2
+2026-09-18 02:14:58,072 | INFO | __main__ | Busiest-period query requested with count=5
+2026-09-18 02:14:58,086 | INFO | __main__ | Busiest-period query completed with 5 results
+2026-09-18 02:15:07,402 | INFO | __main__ | Menu command selected: 5
+2026-09-18 02:15:07,404 | INFO | __main__ | User selected Exit
+2026-09-18 02:15:07,404 | INFO | __main__ | Traffic analysis application closed successfully

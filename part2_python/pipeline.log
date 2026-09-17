@@ -44,3 +44,25 @@
 2026-09-18 01:29:55,476 | INFO | __main__ | Lower-traffic travel-hour query completed with 6 recommendations
 2026-09-18 01:30:32,339 | INFO | __main__ | Menu command selected: 9
 2026-09-18 01:30:32,341 | ERROR | __main__ | Invalid menu selection: 9
+2026-09-18 02:02:18,989 | INFO | __main__ | Menu command selected: 
+2026-09-18 02:02:18,990 | ERROR | __main__ | Invalid menu selection: 
+2026-09-18 02:03:33,591 | INFO | __main__ | Menu command selected: 5
+2026-09-18 02:03:33,591 | INFO | __main__ | User selected Exit
+2026-09-18 02:03:33,591 | INFO | __main__ | Traffic analysis application closed successfully
+2026-09-18 02:03:44,412 | INFO | __main__ | Feature engineering invoked with arguments: {'input': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_cleaned.csv'), 'output': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv'), 'log': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/pipeline.log'), 'debug': False}
+2026-09-18 02:03:44,442 | INFO | __main__ | Loaded cleaned dataset from /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_cleaned.csv with 48187 rows and 9 columns
+2026-09-18 02:03:44,442 | INFO | __main__ | Feature engineering schema validation passed
+2026-09-18 02:03:44,456 | INFO | __main__ | Added time and cyclical features; dataset shape is (48187, 17)
+2026-09-18 02:03:44,461 | INFO | __main__ | Added holiday, precipitation and peak-hour indicators; dataset shape is (48187, 21)
+2026-09-18 02:03:44,468 | INFO | __main__ | Added congestion quartile category; dataset shape is (48187, 22)
+2026-09-18 02:03:44,482 | INFO | __main__ | Standardised temp and traffic_volume; dataset shape is (48187, 24)
+2026-09-18 02:03:44,486 | INFO | __main__ | One-hot encoded weather_main into 11 columns; dataset shape is (48187, 34)
+2026-09-18 02:03:44,859 | INFO | __main__ | Saved feature dataset to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv with 48187 rows and 34 columns
+2026-09-18 02:03:44,860 | INFO | __main__ | Feature engineering completed successfully
+2026-09-18 02:05:44,855 | INFO | __main__ | Visualisation workflow invoked with arguments: {'input': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv'), 'output_dir': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/figures'), 'interpretations': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/visualisation_interpretations.txt'), 'log': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/pipeline.log'), 'debug': False}
+2026-09-18 02:05:44,944 | INFO | __main__ | Loaded feature dataset from /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv with 48187 rows and 34 columns
+2026-09-18 02:05:45,085 | INFO | __main__ | Saved visualisation to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/figures/hourly_traffic_weekday_weekend.png
+2026-09-18 02:05:45,177 | INFO | __main__ | Saved visualisation to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/figures/traffic_volume_distribution.png
+2026-09-18 02:05:45,297 | INFO | __main__ | Saved visualisation to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/figures/average_traffic_by_weather.png
+2026-09-18 02:05:45,297 | INFO | __main__ | Saved visualisation interpretations to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/visualisation_interpretations.txt
+2026-09-18 02:05:45,298 | INFO | __main__ | Visualisation workflow completed successfully

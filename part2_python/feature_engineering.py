@@ -132,7 +132,7 @@ def add_indicator_features(data: pd.DataFrame) -> pd.DataFrame:
 def add_congestion_quartiles(data: pd.DataFrame) -> pd.DataFrame:
     """Create an ordered congestion category using traffic-volume quartiles."""
     featured = data.copy()
-    labels = ["Low", "Medieum", "High", "Severe"]
+    labels = ["Low", "Medium", "High", "Severe"]
     try:
         featured["congestion_quartile"] = pd.qcut(
             featured["traffic_volume"], q=4, labels=labels

@@ -11,6 +11,26 @@ SELECT *
 FROM traffic
 LIMIT 5;
 
+-- Check for exact duplicate rows.
+SELECT
+    SUM(duplicate_count - 1) AS exact_duplicate_rows
+FROM (
+    SELECT
+        COUNT(*) AS duplicate_count
+    FROM traffic
+    GROUP BY
+        holiday,
+        temp,
+        rain_1h,
+        snow_1h,
+        clouds_all,
+        weather_main,
+        weather_description,
+        date_time,
+        traffic_volume
+    HAVING COUNT(*) > 1
+);
+
 -- 1.2 Compare annual traffic totals from 2012 to 2017.
 -- Row counts are included because 2012, 2014 and 2015 have incomplete coverage.
 WITH annual AS (

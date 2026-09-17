@@ -28,3 +28,19 @@
 2026-09-17 23:00:32,341 | INFO | __main__ | Saved visualisation to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/figures/average_traffic_by_weather.png
 2026-09-17 23:00:32,342 | INFO | __main__ | Saved visualisation interpretations to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/visualisation_interpretations.txt
 2026-09-17 23:00:32,343 | INFO | __main__ | Visualisation workflow completed successfully
+2026-09-18 01:24:35,046 | INFO | __main__ | Traffic analysis application started
+2026-09-18 01:24:35,153 | INFO | __main__ | Loaded traffic application dataset with 48187 rows and 34 columns
+2026-09-18 01:28:38,303 | INFO | __main__ | Menu command selected: 1
+2026-09-18 01:28:45,475 | INFO | __main__ | Date lookup requested with date=2017-01-03
+2026-09-18 01:28:45,515 | INFO | __main__ | Date lookup completed for 2017-01-03 with 31 matching records
+2026-09-18 01:29:19,955 | INFO | __main__ | Menu command selected: 2
+2026-09-18 01:29:24,478 | INFO | __main__ | Busiest-period query requested with count=5
+2026-09-18 01:29:24,489 | INFO | __main__ | Busiest-period query completed with 5 results
+2026-09-18 01:29:35,603 | INFO | __main__ | Menu command selected: 3
+2026-09-18 01:29:35,604 | INFO | __main__ | Weekday and weekend comparison requested
+2026-09-18 01:29:35,636 | INFO | __main__ | Weekday and weekend comparison completed; average difference=962
+2026-09-18 01:29:55,457 | INFO | __main__ | Menu command selected: 4
+2026-09-18 01:29:55,459 | INFO | __main__ | Lower-traffic travel-hour query requested
+2026-09-18 01:29:55,476 | INFO | __main__ | Lower-traffic travel-hour query completed with 6 recommendations
+2026-09-18 01:30:32,339 | INFO | __main__ | Menu command selected: 9
+2026-09-18 01:30:32,341 | ERROR | __main__ | Invalid menu selection: 9

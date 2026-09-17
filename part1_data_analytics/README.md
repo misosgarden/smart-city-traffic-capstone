@@ -16,6 +16,7 @@ The original traffic CSV is stored separately in `data/raw/Metro_Interstate_Traf
 
 ## Running the SQL analysis
 
+The following steps can be used to reproduce the SQL analysis:
 1. Open `traffic.db` in DB Browser for SQLite or another SQLite application.
 2. Open the Execute SQL area.
 3. Open or paste the contents of `traffic_analysis.sql`.

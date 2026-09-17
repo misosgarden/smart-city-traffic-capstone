@@ -94,12 +94,13 @@ The figures compare hourly weekday and weekend traffic, show the distribution of
 python3 app.py
 ```
 
-The application provides four analytical queries through a simple numbered menu:
+The application presents the following numbered menu:
 
 1. Look up traffic by date
 2. Show the busiest traffic periods
 3. Compare weekday and weekend traffic
 4. Show lower-traffic travel hours
+5. Exit
 
 The application checks user inputs and displays clear error messages for invalid menu selections, dates and numerical values. Application commands and supplied inputs are recorded in `pipeline.log`.
 

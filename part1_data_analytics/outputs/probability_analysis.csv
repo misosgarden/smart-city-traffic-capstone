@@ -1,9 +1,0 @@
-Measure,Value
-P(Congestion),0.1472906812712638
-P(Clear weather),0.277798522944154
-P(Congestion AND clear weather),0.03657372832130114
-P(Clear weather | Congestion),0.2483098591549296
-P(High temperature | Congestion),0.26295774647887327
-P(Congestion) x P(Clear weather),0.04091713370059525
-Joint minus independence product,-0.004343405379294112
-"Odds ratio, clear versus cloudy",0.7353882125733118

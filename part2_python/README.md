@@ -114,6 +114,13 @@ These descriptive comparisons should not be interpreted as proof that weather di
 
 ## Logging and error handling
 
-The scripts check for problems such as missing files, unreadable data, missing required columns and invalid values. Important processing stages, warnings, errors, generated outputs and application commands are recorded in `pipeline.log`.
+Logs are written to `pipeline.log` and displayed in the terminal. Each entry includes a timestamp, logging level, module name and message.
 
-This log provides a record of how the processed datasets and analytical outputs were produced.
+The logging levels are used as follows:
+
+- `DEBUG`: Records detailed intermediate values, such as quartile thresholds and scaling parameters, when debug mode is enabled.
+- `INFO`: Records normal milestones, including loading data, completing processing stages, saving outputs and running application commands.
+- `WARNING`: Records recoverable issues or data changes, such as removing duplicates or imputing invalid values.
+- `ERROR`: Records failures that prevent a script or application command from continuing as planned.
+
+The scripts also check for missing files, unreadable data, missing required columns and invalid user inputs. This provides an auditable record of how the processed datasets and analytical outputs were produced.

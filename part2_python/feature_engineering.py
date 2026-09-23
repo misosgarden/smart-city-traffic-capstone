@@ -42,9 +42,8 @@ def configure_logging(log_path: Path, debug: bool = False) -> None:
         "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
     )
 
-    root_logger = logging.getLogger()
-    root_logger.setLevel(level)
-    root_logger.handlers.clear()
+    LOGGER.setLevel(level)
+    LOGGER.handlers.clear()
 
     console_handler = logging.StreamHandler()
     console_handler.setLevel(level)
@@ -54,8 +53,9 @@ def configure_logging(log_path: Path, debug: bool = False) -> None:
     file_handler.setLevel(level)
     file_handler.setFormatter(formatter)
 
-    root_logger.addHandler(console_handler)
-    root_logger.addHandler(file_handler)
+    LOGGER.addHandler(console_handler)
+    LOGGER.addHandler(file_handler)
+    LOGGER.propagate = False
 
 
 def load_cleaned_data(input_path: Path) -> pd.DataFrame:

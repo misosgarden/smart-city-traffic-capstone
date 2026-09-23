@@ -24,9 +24,8 @@ def configure_logging() -> None:
         "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
     )
 
-    logger = logging.getLogger()
-    logger.setLevel(logging.INFO)
-    logger.handlers.clear()
+    LOGGER.setLevel(logging.INFO)
+    LOGGER.handlers.clear()
 
     console_handler = logging.StreamHandler()
     console_handler.setFormatter(formatter)
@@ -38,8 +37,9 @@ def configure_logging() -> None:
     )
     file_handler.setFormatter(formatter)
 
-    logger.addHandler(console_handler)
-    logger.addHandler(file_handler)
+    LOGGER.addHandler(console_handler)
+    LOGGER.addHandler(file_handler)
+    LOGGER.propagate = False
 
 
 def load_traffic_data() -> pd.DataFrame:

@@ -74,3 +74,28 @@
 2026-09-18 02:15:07,402 | INFO | __main__ | Menu command selected: 5
 2026-09-18 02:15:07,404 | INFO | __main__ | User selected Exit
 2026-09-18 02:15:07,404 | INFO | __main__ | Traffic analysis application closed successfully
+2026-09-24 01:10:02,590 | INFO | __main__ | Feature engineering invoked with arguments: {'input': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_cleaned.csv'), 'output': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv'), 'log': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/pipeline.log'), 'debug': False}
+2026-09-24 01:10:02,628 | INFO | __main__ | Loaded cleaned dataset from /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_cleaned.csv with 48187 rows and 9 columns
+2026-09-24 01:10:02,628 | INFO | __main__ | Feature engineering schema validation passed
+2026-09-24 01:10:02,642 | INFO | __main__ | Added time and cyclical features; dataset shape is (48187, 17)
+2026-09-24 01:10:02,648 | INFO | __main__ | Added holiday, precipitation and peak-hour indicators; dataset shape is (48187, 21)
+2026-09-24 01:10:02,654 | INFO | __main__ | Added congestion quartile category; dataset shape is (48187, 22)
+2026-09-24 01:10:02,668 | INFO | __main__ | Standardised temp and traffic_volume; dataset shape is (48187, 24)
+2026-09-24 01:10:02,673 | INFO | __main__ | One-hot encoded weather_main into 11 columns; dataset shape is (48187, 34)
+2026-09-24 01:10:03,038 | INFO | __main__ | Saved feature dataset to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv with 48187 rows and 34 columns
+2026-09-24 01:10:03,039 | INFO | __main__ | Feature engineering completed successfully
+2026-09-24 01:10:22,992 | INFO | __main__ | Traffic analysis application started
+2026-09-24 01:10:23,092 | INFO | __main__ | Loaded traffic application dataset with 48187 rows and 34 columns
+2026-09-24 01:10:31,263 | INFO | __main__ | Menu command selected: 2
+2026-09-24 01:10:35,305 | INFO | __main__ | Busiest-period query requested with count=3
+2026-09-24 01:10:35,323 | INFO | __main__ | Busiest-period query completed with 3 results
+2026-09-24 01:10:43,084 | INFO | __main__ | Menu command selected: 5
+2026-09-24 01:10:43,085 | INFO | __main__ | User selected Exit
+2026-09-24 01:10:43,085 | INFO | __main__ | Traffic analysis application closed successfully
+2026-09-24 01:10:56,943 | INFO | __main__ | Visualisation workflow invoked with arguments: {'input': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv'), 'output_dir': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/figures'), 'interpretations': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/visualisation_interpretations.txt'), 'log': PosixPath('/Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/pipeline.log'), 'debug': False}
+2026-09-24 01:10:57,033 | INFO | __main__ | Loaded feature dataset from /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv with 48187 rows and 34 columns
+2026-09-24 01:10:57,187 | INFO | __main__ | Saved visualisation to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/figures/hourly_traffic_weekday_weekend.png
+2026-09-24 01:10:57,281 | INFO | __main__ | Saved visualisation to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/figures/traffic_volume_distribution.png
+2026-09-24 01:10:57,404 | INFO | __main__ | Saved visualisation to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/figures/average_traffic_by_weather.png
+2026-09-24 01:10:57,405 | INFO | __main__ | Saved visualisation interpretations to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/visualisation_interpretations.txt
+2026-09-24 01:10:57,406 | INFO | __main__ | Visualisation workflow completed successfully

@@ -36,11 +36,23 @@ part3_machine_learning/
 │   ├── mlflow.db
 │   └── artifacts/
 ├── reports/
-│   ├── final_capstone_report.docx
-│   ├── final_capstone_report.md
+│   ├── association_rules.csv
 │   ├── bias_fairness_governance_report.md
+│   ├── classification_model_results.csv
+│   ├── classification_roc_curves.png
+│   ├── deep_learning_model_comparison.csv
 │   ├── drift_monitoring_results.csv
-│   └── drift_monitoring_summary.txt
+│   ├── drift_monitoring_summary.txt
+│   ├── final_capstone_report.docx
+│   ├── kmeans_cluster_profiles.csv
+│   ├── kmeans_cluster_traffic.png
+│   ├── neural_network_results.csv
+│   ├── neural_network_training_loss.png
+│   ├── regression_model_results.csv
+│   ├── shap_feature_importance.csv
+│   ├── shap_feature_summary.png
+│   ├── top_association_rules.csv
+│   └── traffic_cluster_assignments.csv
 ├── part3.log
 └── README.md
 ```

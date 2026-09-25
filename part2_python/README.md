@@ -14,13 +14,15 @@ This folder contains the Python work completed for Part 2 of the Smart City Traf
 - `data/processed/traffic_features.csv`: Feature-engineered dataset produced by `feature_engineering.py`.
 - `figures/`: Contains the three generated visualisations.
 
-The original traffic dataset is stored separately at:
+The original traffic dataset is stored in the repository-level data folder at:
 
-`data/raw/Metro_Interstate_Traffic_Volume.csv`
+`../data/raw/Metro_Interstate_Traffic_Volume.csv`
+
+The path above is relative to the `part2_python` folder.
 
 ## Requirements
 
-The workflow uses Python 3 with:
+The project was tested using Python 3.13.7. Python 3.13 is required to maintain compatibility with the saved model artifacts used later in the project.
 
 - pandas
 - NumPy

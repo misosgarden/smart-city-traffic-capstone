@@ -1,0 +1,37 @@
+Smart City Traffic Model Drift Monitoring Summary
+
+Method: Population Stability Index (PSI)
+Rainfall method: PSI applied to rainfall occurrence, defined as rain_1h greater than zero
+Alert threshold: PSI >= 0.20
+
+Interpretation:
+PSI < 0.10: No material drift
+PSI from 0.10 to below 0.20: Moderate change
+PSI >= 0.20: Material drift
+
+The historical reference dataset contains the first 80% of observations in chronological order.
+Each simulated monitoring scenario contains up to 5,000 observations.
+The normal scenario is sampled from the historical reference distribution.
+The shifted scenario contains deliberately modified traffic volume, temperature, rainfall and cloud coverage values to test whether the monitoring process can generate an alert.
+Rainfall occurrence is monitored instead of raw rainfall depth because rain_1h is highly zero-inflated. Quantile-based PSI on the raw values may not reliably detect a change from dry to rainy conditions.
+The overall status is ALERT / Requires investigation when at least one monitored feature has a PSI value greater than or equal to 0.20.
+
+Normal simulated sample: PASS / Normal
+  traffic_volume: PSI=0.0012, No material drift, PASS
+  temp: PSI=0.0009, No material drift, PASS
+  rain_occurrence: PSI=0.0000, No material drift, PASS
+  clouds_all: PSI=0.0012, No material drift, PASS
+  hour: PSI=0.0012, No material drift, PASS
+
+Shifted alert-test sample: ALERT / Requires investigation
+  traffic_volume: PSI=1.7154, Material drift, ALERT
+  temp: PSI=0.9832, Material drift, ALERT
+  rain_occurrence: PSI=10.9336, Material drift, ALERT
+  clouds_all: PSI=0.6794, Material drift, ALERT
+  hour: PSI=0.0012, No material drift, PASS
+
+Operational response:
+A PASS result indicates that the monitored feature distributions remain within the defined threshold.
+An ALERT result requires investigation before model retraining, replacement or continued deployment is considered.
+A monitoring alert should not trigger automatic retraining. Data quality, model performance and the cause of the distribution change should be reviewed first.
+This demonstration uses simulated monitoring scenarios and does not represent a live production monitoring service.

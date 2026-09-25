@@ -1,0 +1,11 @@
+Scenario,Feature,Reference_Mean,Current_Mean,PSI,Drift_Level,Feature_Status,Threshold,Overall_Status
+Normal simulated sample,traffic_volume,3260.6005,3279.2132,0.0012,No material drift,PASS,0.2,PASS / Normal
+Normal simulated sample,temp,281.4195,281.5807,0.0009,No material drift,PASS,0.2,PASS / Normal
+Normal simulated sample,rain_occurrence,0.0714,0.07,0.0,No material drift,PASS,0.2,PASS / Normal
+Normal simulated sample,clouds_all,49.9254,49.341,0.0012,No material drift,PASS,0.2,PASS / Normal
+Normal simulated sample,hour,11.3967,11.4636,0.0012,No material drift,PASS,0.2,PASS / Normal
+Shifted alert-test sample,traffic_volume,3260.6005,4926.9378,1.7154,Material drift,ALERT,0.2,ALERT / Requires investigation
+Shifted alert-test sample,temp,281.4195,293.5807,0.9832,Material drift,ALERT,0.2,ALERT / Requires investigation
+Shifted alert-test sample,rain_occurrence,0.0714,1.0,10.9336,Material drift,ALERT,0.2,ALERT / Requires investigation
+Shifted alert-test sample,clouds_all,49.9254,71.3518,0.6794,Material drift,ALERT,0.2,ALERT / Requires investigation
+Shifted alert-test sample,hour,11.3967,11.4636,0.0012,No material drift,PASS,0.2,ALERT / Requires investigation

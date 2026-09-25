@@ -114,6 +114,8 @@ The traffic-volume distribution reflects a mixture of low overnight traffic and 
 
 These descriptive comparisons should not be interpreted as proof that weather directly causes changes in traffic. Time of day, commuting behaviour and differences in the number of observations within each weather category may also influence the results.
 
+These findings are based on a single monitored road corridor with incomplete temporal coverage. See the root README and `part3_machine_learning/reports/bias_fairness_governance_report.md` for the full scope and limitations discussion.
+
 ## Logging and error handling
 
 Logs are written to `pipeline.log` and displayed in the terminal. Each entry includes a timestamp, logging level, module name and message.

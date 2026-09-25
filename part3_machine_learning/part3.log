@@ -1,0 +1,199 @@
+2026-09-22 17:16:21,723 | INFO | __main__ | Supervised modelling notebook started
+2026-09-22 17:16:47,632 | INFO | __main__ | Loaded feature dataset with 48187 rows and 34 columns
+2026-09-22 17:30:01,185 | INFO | __main__ | Created proxy risk label using 7 risky-weather columns
+2026-09-22 17:46:53,798 | INFO | __main__ | Created stratified classification split with 38549 training and 9638 test records
+2026-09-22 17:47:16,514 | INFO | __main__ | Training classification model: Logistic Regression
+2026-09-22 17:47:16,888 | INFO | __main__ | Logistic Regression completed with ROC AUC 0.9937
+2026-09-22 17:47:16,889 | INFO | __main__ | Training classification model: Random Forest
+2026-09-22 17:47:17,759 | INFO | __main__ | Random Forest completed with ROC AUC 0.9970
+2026-09-22 17:49:50,923 | INFO | __main__ | Saved best classifier Random Forest to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/models/best_risk_classifier.joblib
+2026-09-22 17:53:02,919 | INFO | __main__ | Created regression split with 38549 training and 9638 test records
+2026-09-22 17:53:04,701 | INFO | __main__ | Training regression model: Linear Regression
+2026-09-22 17:53:04,780 | INFO | __main__ | Linear Regression completed with MAE 832.89 and R2 0.7100
+2026-09-22 17:53:04,813 | INFO | __main__ | Training regression model: Random Forest Regressor
+2026-09-22 17:53:07,584 | INFO | __main__ | Random Forest Regressor completed with MAE 244.04 and R2 0.9538
+2026-09-22 18:10:59,416 | INFO | __main__ | Saved best regression model Random Forest Regressor to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/models/best_traffic_regressor.joblib
+2026-09-22 18:16:19,950 | INFO | __main__ | Unsupervised-learning notebook started
+2026-09-22 18:17:45,834 | INFO | __main__ | Loaded feature dataset with 48187 rows and 34 columns
+2026-09-22 18:18:49,955 | INFO | __main__ | Prepared 48187 records using 8 clustering features
+2026-09-22 18:19:06,069 | INFO | __main__ | Evaluated K-means with 2 clusters: silhouette score 0.2405
+2026-09-22 18:19:07,560 | INFO | __main__ | Evaluated K-means with 3 clusters: silhouette score 0.2453
+2026-09-22 18:19:09,404 | INFO | __main__ | Evaluated K-means with 4 clusters: silhouette score 0.1959
+2026-09-22 18:19:11,103 | INFO | __main__ | Evaluated K-means with 5 clusters: silhouette score 0.2047
+2026-09-22 18:19:13,392 | INFO | __main__ | Evaluated K-means with 6 clusters: silhouette score 0.2313
+2026-09-22 18:30:58,934 | INFO | __main__ | Trained final K-means model with 3 clusters
+2026-09-22 18:58:23,941 | INFO | __main__ | Saved K-means cluster figure to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/kmeans_cluster_traffic.png
+2026-09-22 18:58:31,346 | INFO | __main__ | Saved K-means profiles to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/kmeans_cluster_profiles.csv
+2026-09-22 18:58:31,346 | INFO | __main__ | Saved traffic cluster assignments to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/traffic_cluster_assignments.csv
+2026-09-22 18:58:31,347 | INFO | __main__ | Saved K-means model to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/models/kmeans_traffic_clusters.joblib
+2026-09-23 15:44:21,979 | INFO | __main__ | Unsupervised-learning notebook started
+2026-09-23 15:44:22,150 | INFO | __main__ | Loaded feature dataset with 48187 rows and 34 columns
+2026-09-23 15:44:22,190 | INFO | __main__ | Prepared 48187 records using 8 clustering features
+2026-09-23 15:44:23,985 | INFO | __main__ | Evaluated K-means with 2 clusters: silhouette score 0.2405
+2026-09-23 15:44:25,848 | INFO | __main__ | Evaluated K-means with 3 clusters: silhouette score 0.2453
+2026-09-23 15:44:27,777 | INFO | __main__ | Evaluated K-means with 4 clusters: silhouette score 0.1959
+2026-09-23 15:44:29,921 | INFO | __main__ | Evaluated K-means with 5 clusters: silhouette score 0.2047
+2026-09-23 15:44:33,033 | INFO | __main__ | Evaluated K-means with 6 clusters: silhouette score 0.2313
+2026-09-23 15:44:34,431 | INFO | __main__ | Trained final K-means model with 3 clusters
+2026-09-23 15:44:34,971 | INFO | __main__ | Saved K-means cluster figure to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/kmeans_cluster_traffic.png
+2026-09-23 15:44:35,044 | INFO | __main__ | Saved K-means profiles to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/kmeans_cluster_profiles.csv
+2026-09-23 15:44:35,044 | INFO | __main__ | Saved traffic cluster assignments to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/traffic_cluster_assignments.csv
+2026-09-23 15:44:35,044 | INFO | __main__ | Saved K-means model to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/models/kmeans_traffic_clusters.joblib
+2026-09-23 15:55:10,339 | INFO | __main__ | Prepared 48187 transactions with 21 categorical items
+2026-09-23 15:55:44,128 | INFO | __main__ | Generated 162 frequent itemsets and 189 congestion rules
+2026-09-23 16:18:10,472 | INFO | __main__ | Generated 162 frequent itemsets and 66 congestion-only rules
+2026-09-23 16:19:28,941 | INFO | __main__ | Saved congestion association rules to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/association_rules.csv
+2026-09-23 16:19:28,943 | INFO | __main__ | Saved top association rules to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/top_association_rules.csv
+2026-09-23 16:27:34,222 | INFO | __main__ | Unsupervised-learning notebook started
+2026-09-23 16:27:34,335 | INFO | __main__ | Loaded feature dataset with 48187 rows and 34 columns
+2026-09-23 16:27:34,369 | INFO | __main__ | Prepared 48187 records using 8 clustering features
+2026-09-23 16:27:36,191 | INFO | __main__ | Evaluated K-means with 2 clusters: silhouette score 0.2405
+2026-09-23 16:27:37,684 | INFO | __main__ | Evaluated K-means with 3 clusters: silhouette score 0.2453
+2026-09-23 16:27:39,831 | INFO | __main__ | Evaluated K-means with 4 clusters: silhouette score 0.1959
+2026-09-23 16:27:42,397 | INFO | __main__ | Evaluated K-means with 5 clusters: silhouette score 0.2047
+2026-09-23 16:27:44,066 | INFO | __main__ | Evaluated K-means with 6 clusters: silhouette score 0.2313
+2026-09-23 16:27:44,672 | INFO | __main__ | Trained final K-means model with 3 clusters
+2026-09-23 16:27:45,311 | INFO | __main__ | Saved K-means cluster figure to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/kmeans_cluster_traffic.png
+2026-09-23 16:27:45,405 | INFO | __main__ | Saved K-means profiles to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/kmeans_cluster_profiles.csv
+2026-09-23 16:27:45,406 | INFO | __main__ | Saved traffic cluster assignments to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/traffic_cluster_assignments.csv
+2026-09-23 16:27:45,407 | INFO | __main__ | Saved K-means model to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/models/kmeans_traffic_clusters.joblib
+2026-09-23 16:27:45,536 | INFO | __main__ | Prepared 48187 transactions with 21 categorical items
+2026-09-23 16:27:45,587 | INFO | __main__ | Generated 162 frequent itemsets and 66 congestion-only rules
+2026-09-23 16:27:45,606 | INFO | __main__ | Saved congestion association rules to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/association_rules.csv
+2026-09-23 16:27:45,607 | INFO | __main__ | Saved top association rules to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/top_association_rules.csv
+2026-09-23 18:22:51,611 | INFO | __main__ | Deep-learning and explainability notebook started
+2026-09-23 18:23:56,692 | INFO | __main__ | Prepared chronological split with 38549 training and 9638 test records
+2026-09-23 18:41:04,169 | INFO | __main__ | Training neural network for traffic prediction
+2026-09-23 18:41:09,584 | INFO | __main__ | Neural-network training completed after 28 epochs
+2026-09-23 18:44:04,010 | INFO | __main__ | Neural network evaluated with MAE 491.09 and R2 0.8858
+2026-09-23 18:47:16,169 | INFO | __main__ | Saved neural-network loss figure to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/neural_network_training_loss.png
+2026-09-23 18:58:08,213 | INFO | __main__ | Saved neural network and preprocessing objects
+2026-09-23 18:59:42,698 | INFO | __main__ | Training comparable Random Forest model for SHAP
+2026-09-23 18:59:44,888 | INFO | __main__ | SHAP model evaluated with MAE 295.55 and R2 0.9277
+2026-09-23 20:18:58,830 | INFO | __main__ | Calculating SHAP values for 1000 test observations
+2026-09-23 20:22:17,039 | INFO | __main__ | Saved SHAP summary figure to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/shap_feature_summary.png
+2026-09-23 21:52:58,871 | INFO | __main__ | Saved SHAP model, feature importance and model comparison
+2026-09-23 21:54:32,388 | INFO | __main__ | Deep-learning and explainability notebook started
+2026-09-23 21:54:32,517 | INFO | __main__ | Prepared chronological split with 38549 training and 9638 test records
+2026-09-23 21:54:32,610 | INFO | __main__ | Training neural network for traffic prediction
+2026-09-23 21:54:37,620 | INFO | __main__ | Neural-network training completed after 34 epochs
+2026-09-23 21:54:37,802 | INFO | __main__ | Neural network evaluated with MAE 463.91 and R2 0.8955
+2026-09-23 21:54:38,205 | INFO | __main__ | Saved neural-network loss figure to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/neural_network_training_loss.png
+2026-09-23 21:54:38,232 | INFO | __main__ | Saved neural network and preprocessing objects
+2026-09-23 21:54:38,237 | INFO | __main__ | Training comparable Random Forest model for SHAP
+2026-09-23 21:54:39,987 | INFO | __main__ | SHAP model evaluated with MAE 295.55 and R2 0.9277
+2026-09-23 21:54:39,997 | INFO | __main__ | Calculating SHAP values for 1000 test observations
+2026-09-23 21:58:01,058 | INFO | __main__ | Saved SHAP summary figure to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/shap_feature_summary.png
+2026-09-23 21:58:01,265 | INFO | __main__ | Saved SHAP model, feature importance and model comparison
+2026-09-23 23:11:16,966 | INFO | recommendation_system | Saved 4 traffic-management recommendations to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/recommendation_system/traffic_management_recommendations.csv
+2026-09-23 23:52:26,160 | INFO | __main__ | Travel-timing recommendation notebook started
+2026-09-23 23:57:21,738 | INFO | __main__ | Loaded 48187 traffic observations with 11 weather categories
+2026-09-24 00:06:36,966 | INFO | __main__ | Created 455 weather-specific hourly patterns, of which 296 met the minimum sample requirement
+2026-09-24 00:14:45,583 | INFO | __main__ | Generated 3 travel-window recommendations for Rain conditions on a Weekday
+2026-09-24 00:14:45,589 | INFO | __main__ | Generated 3 travel-window recommendations for Clear conditions on a Weekend
+2026-09-24 00:14:45,594 | WARNING | __main__ | Insufficient reliable observations for Weekday and Squall. Using day-type patterns.
+2026-09-24 00:14:45,596 | INFO | __main__ | Generated 3 travel-window recommendations for Squall conditions on a Weekday
+2026-09-24 00:17:34,897 | INFO | __main__ | Saved 9 travel-window recommendations to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/recommendation_system/travel_timing_recommendations.csv
+2026-09-24 00:21:51,659 | INFO | __main__ | Travel-timing recommendation notebook started
+2026-09-24 00:21:51,778 | INFO | __main__ | Loaded 48187 traffic observations with 11 weather categories
+2026-09-24 16:47:00,854 | INFO | __main__ | Drift-monitoring workflow started
+2026-09-24 16:47:00,974 | INFO | __main__ | Loaded 48187 observations from /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv
+2026-09-24 16:47:00,976 | INFO | __main__ | Created historical reference dataset with 38549 observations
+2026-09-24 16:47:00,979 | INFO | __main__ | Created normal monitoring scenario with 5000 observations
+2026-09-24 16:47:00,980 | INFO | __main__ | Created deliberately shifted monitoring scenario for alert testing
+2026-09-24 16:47:00,988 | INFO | __main__ | Normal simulated sample completed with status: PASS / Normal
+2026-09-24 16:47:00,996 | INFO | __main__ | Shifted alert-test sample completed with status: ALERT / Requires investigation
+2026-09-24 16:47:00,999 | INFO | __main__ | Saved detailed drift results to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/drift_monitoring_results.csv
+2026-09-24 16:47:00,999 | INFO | __main__ | Saved drift summary to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/drift_monitoring_summary.txt
+2026-09-24 16:47:01,002 | INFO | __main__ | Drift-monitoring workflow completed successfully
+2026-09-24 17:16:44,514 | INFO | __main__ | Drift-monitoring workflow started
+2026-09-24 17:16:44,627 | INFO | __main__ | Loaded 48187 observations from /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv
+2026-09-24 17:16:44,630 | INFO | __main__ | Created historical reference dataset with 38549 observations
+2026-09-24 17:16:44,632 | INFO | __main__ | Created normal monitoring scenario with 5000 observations
+2026-09-24 17:16:44,633 | INFO | __main__ | Created deliberately shifted monitoring scenario for alert testing
+2026-09-24 17:16:44,642 | INFO | __main__ | Normal simulated sample completed with status: PASS / Normal
+2026-09-24 17:16:44,650 | WARNING | __main__ | Shifted alert-test sample completed with status: ALERT / Requires investigation
+2026-09-24 17:16:44,654 | INFO | __main__ | Saved detailed drift results to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/drift_monitoring_results.csv
+2026-09-24 17:16:44,654 | INFO | __main__ | Saved drift summary to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/drift_monitoring_summary.txt
+2026-09-24 17:16:44,657 | INFO | __main__ | Drift-monitoring workflow completed successfully
+2026-09-24 17:16:50,221 | INFO | __main__ | Drift-monitoring workflow started
+2026-09-24 17:16:50,326 | INFO | __main__ | Loaded 48187 observations from /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv
+2026-09-24 17:16:50,329 | INFO | __main__ | Created historical reference dataset with 38549 observations
+2026-09-24 17:16:50,331 | INFO | __main__ | Created normal monitoring scenario with 5000 observations
+2026-09-24 17:16:50,333 | INFO | __main__ | Created deliberately shifted monitoring scenario for alert testing
+2026-09-24 17:16:50,342 | INFO | __main__ | Normal simulated sample completed with status: PASS / Normal
+2026-09-24 17:16:50,352 | WARNING | __main__ | Shifted alert-test sample completed with status: ALERT / Requires investigation
+2026-09-24 17:16:50,357 | INFO | __main__ | Saved detailed drift results to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/drift_monitoring_results.csv
+2026-09-24 17:16:50,357 | INFO | __main__ | Saved drift summary to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/drift_monitoring_summary.txt
+2026-09-24 17:16:50,360 | INFO | __main__ | Drift-monitoring workflow completed successfully
+2026-09-25 01:19:52,504 | INFO | __main__ | Supervised modelling notebook started
+2026-09-25 01:19:52,601 | INFO | __main__ | Loaded feature dataset with 48187 rows and 34 columns
+2026-09-25 01:19:52,624 | INFO | __main__ | Created proxy risk label using 7 risky-weather columns
+2026-09-25 01:19:52,667 | INFO | __main__ | Created stratified classification split with 38549 training and 9638 test records
+2026-09-25 01:19:52,675 | INFO | __main__ | Training classification model: Logistic Regression
+2026-09-25 01:19:52,736 | INFO | __main__ | Logistic Regression completed with ROC AUC 0.9937
+2026-09-25 01:19:52,737 | INFO | __main__ | Training classification model: Random Forest
+2026-09-25 01:19:53,396 | INFO | __main__ | Random Forest completed with ROC AUC 0.9970
+2026-09-25 01:19:53,535 | INFO | __main__ | Saved best classifier Random Forest to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/models/best_risk_classifier.joblib
+2026-09-25 01:19:53,787 | INFO | __main__ | Created regression split with 38549 training and 9638 test records
+2026-09-25 01:19:53,793 | INFO | __main__ | Training regression model: Linear Regression
+2026-09-25 01:19:53,825 | INFO | __main__ | Linear Regression completed with MAE 832.91 and R2 0.7099
+2026-09-25 01:19:53,826 | INFO | __main__ | Training regression model: Random Forest Regressor
+2026-09-25 01:19:56,461 | INFO | __main__ | Random Forest Regressor completed with MAE 244.04 and R2 0.9538
+2026-09-25 01:19:58,748 | INFO | __main__ | Saved best regression model Random Forest Regressor to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/models/best_traffic_regressor.joblib
+2026-09-25 01:56:17,664 | INFO | __main__ | Unsupervised-learning notebook started
+2026-09-25 01:56:17,830 | INFO | __main__ | Loaded feature dataset with 48187 rows and 34 columns
+2026-09-25 01:56:17,879 | INFO | __main__ | Prepared 48187 records using 8 clustering features
+2026-09-25 01:56:18,920 | INFO | __main__ | Evaluated K-means with 2 clusters: silhouette score 0.2405
+2026-09-25 01:56:19,731 | INFO | __main__ | Evaluated K-means with 3 clusters: silhouette score 0.2409
+2026-09-25 01:56:20,540 | INFO | __main__ | Evaluated K-means with 4 clusters: silhouette score 0.2477
+2026-09-25 01:56:21,385 | INFO | __main__ | Evaluated K-means with 5 clusters: silhouette score 0.2579
+2026-09-25 01:56:22,187 | INFO | __main__ | Evaluated K-means with 6 clusters: silhouette score 0.2170
+2026-09-25 01:56:22,291 | INFO | __main__ | Trained final K-means model with 3 clusters
+2026-09-25 01:56:22,572 | INFO | __main__ | Saved K-means cluster figure to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/kmeans_cluster_traffic.png
+2026-09-25 01:56:22,633 | INFO | __main__ | Saved K-means profiles to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/kmeans_cluster_profiles.csv
+2026-09-25 01:56:22,633 | INFO | __main__ | Saved traffic cluster assignments to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/traffic_cluster_assignments.csv
+2026-09-25 01:56:22,633 | INFO | __main__ | Saved K-means model to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/models/kmeans_traffic_clusters.joblib
+2026-09-25 01:56:22,681 | INFO | __main__ | Prepared 48187 transactions with 21 categorical items
+2026-09-25 01:56:22,709 | INFO | __main__ | Generated 162 frequent itemsets and 66 congestion-only rules
+2026-09-25 01:56:22,730 | INFO | __main__ | Saved congestion association rules to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/association_rules.csv
+2026-09-25 01:56:22,731 | INFO | __main__ | Saved top association rules to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/top_association_rules.csv
+2026-09-25 02:44:25,176 | INFO | __main__ | Trained final K-means model with 5 clusters
+2026-09-25 02:47:16,631 | INFO | __main__ | Saved K-means cluster figure to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/kmeans_cluster_traffic.png
+2026-09-25 02:48:42,702 | INFO | __main__ | Saved K-means profiles to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/kmeans_cluster_profiles.csv
+2026-09-25 02:48:42,703 | INFO | __main__ | Saved traffic cluster assignments to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/traffic_cluster_assignments.csv
+2026-09-25 02:48:42,704 | INFO | __main__ | Saved K-means model to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/models/kmeans_traffic_clusters.joblib
+2026-09-25 02:49:00,900 | INFO | __main__ | Prepared 48187 transactions with 21 categorical items
+2026-09-25 02:49:36,183 | INFO | __main__ | Generated 162 frequent itemsets and 66 congestion-only rules
+2026-09-25 02:50:26,583 | INFO | __main__ | Saved congestion association rules to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/association_rules.csv
+2026-09-25 02:50:26,586 | INFO | __main__ | Saved top association rules to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/top_association_rules.csv
+2026-09-25 03:18:54,568 | INFO | __main__ | Deep-learning and explainability notebook started
+2026-09-25 03:20:24,024 | INFO | __main__ | Prepared chronological split with 38549 training and 9638 test records
+2026-09-25 03:21:00,661 | INFO | __main__ | Training neural network for traffic prediction
+2026-09-25 03:21:05,285 | INFO | __main__ | Neural-network training completed after 26 epochs
+2026-09-25 03:21:42,746 | INFO | __main__ | Neural network evaluated with MAE 493.06 and R2 0.8845
+2026-09-25 03:22:39,136 | INFO | __main__ | Saved neural-network loss figure to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/neural_network_training_loss.png
+2026-09-25 03:22:56,510 | INFO | __main__ | Saved neural network and preprocessing objects
+2026-09-25 03:23:35,892 | INFO | __main__ | Training comparable Random Forest model for SHAP
+2026-09-25 03:23:38,090 | INFO | __main__ | SHAP model evaluated with MAE 295.55 and R2 0.9277
+2026-09-25 03:24:32,657 | INFO | __main__ | Calculating SHAP values for 1000 test observations
+2026-09-25 03:28:05,669 | INFO | __main__ | Saved SHAP summary figure to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/shap_feature_summary.png
+2026-09-25 03:29:38,086 | INFO | __main__ | Saved SHAP model, feature importance and model comparison
+2026-09-25 04:13:57,924 | INFO | __main__ | Travel-timing recommendation notebook started
+2026-09-25 04:14:33,660 | INFO | __main__ | Loaded 48187 traffic observations with 11 weather categories
+2026-09-25 04:21:07,925 | INFO | __main__ | Created 455 weather-specific hourly patterns, of which 296 met the minimum sample requirement
+2026-09-25 04:28:50,120 | INFO | __main__ | Generated 3 travel-window recommendations for Rain conditions on a Weekday
+2026-09-25 04:28:50,130 | INFO | __main__ | Generated 3 travel-window recommendations for Clear conditions on a Weekend
+2026-09-25 04:28:50,134 | WARNING | __main__ | Insufficient reliable observations for Weekday and Squall. Using day-type patterns.
+2026-09-25 04:28:50,138 | INFO | __main__ | Generated 3 travel-window recommendations for Squall conditions on a Weekday
+2026-09-25 04:29:38,411 | INFO | __main__ | Saved 9 travel-window recommendations to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/recommendation_system/travel_timing_recommendations.csv
+2026-09-25 12:42:44,702 | INFO | __main__ | Drift-monitoring workflow started
+2026-09-25 12:42:44,829 | INFO | __main__ | Loaded 48187 observations from /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part2_python/data/processed/traffic_features.csv
+2026-09-25 12:42:44,832 | INFO | __main__ | Created historical reference dataset with 38549 observations
+2026-09-25 12:42:44,834 | INFO | __main__ | Created normal monitoring scenario with 5000 observations
+2026-09-25 12:42:44,836 | INFO | __main__ | Created deliberately shifted monitoring scenario for alert testing
+2026-09-25 12:42:44,851 | INFO | __main__ | Normal simulated sample completed with status: PASS / Normal
+2026-09-25 12:42:44,859 | WARNING | __main__ | Shifted alert-test sample completed with status: ALERT / Requires investigation
+2026-09-25 12:42:44,864 | INFO | __main__ | Saved detailed drift results to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/drift_monitoring_results.csv
+2026-09-25 12:42:44,864 | INFO | __main__ | Saved drift summary to /Users/misatoniwa/Downloads/smart-city-traffic-capstone/part3_machine_learning/reports/drift_monitoring_summary.txt
+2026-09-25 12:42:44,867 | INFO | __main__ | Drift-monitoring workflow completed successfully

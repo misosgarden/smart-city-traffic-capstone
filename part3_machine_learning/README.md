@@ -36,6 +36,7 @@ part3_machine_learning/
 │   ├── mlflow.db
 │   └── artifacts/
 ├── reports/
+│   ├── Smart City Traffic Intelligence Final Report.docx 
 │   ├── association_rules.csv
 │   ├── bias_fairness_governance_report.md
 │   ├── classification_model_results.csv
@@ -43,7 +44,6 @@ part3_machine_learning/
 │   ├── deep_learning_model_comparison.csv
 │   ├── drift_monitoring_results.csv
 │   ├── drift_monitoring_summary.txt
-│   ├── final_capstone_report.docx
 │   ├── kmeans_cluster_profiles.csv
 │   ├── kmeans_cluster_traffic.png
 │   ├── neural_network_results.csv
